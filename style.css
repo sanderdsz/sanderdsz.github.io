@@ -45,7 +45,7 @@ body {
         width: 0;
     }
     to {
-        width: 18em;
+        width: 13em;
     }
 }
 
@@ -55,7 +55,7 @@ body {
             width: 0;
         }
         to {
-            width: 17em;
+            width: 13em;
         }
     }
 }
@@ -287,59 +287,6 @@ nav #menu li a:hover {
 }
 
 
-/*--------------- projects section --------------- */
-
-h6 {
-    text-align: center;
-}
-
-.vertical {
-    margin-top: 40px;
-    border-left: 1px solid #fff;
-    height: 80px;
-    position: absolute;
-    left: 50%;
-}
-
-.project {
-    height: 500px;
-}
-
-.project1 {
-    background: url(https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project1::after {
-    content: "timeless flow.";
-    font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
-    color: #fff;
-    display: block;
-    top: 8%;
-    left: -60%;
-    right: 0;
-    bottom: 0;
-}
-
-@media(max-width: 768px) {
-    .project {
-        width: 90% !important;
-        margin: 14px auto;
-    }
-    .vertical {
-        display: none;
-    }
-    .project1::after,
-    .project2::after,
-    .project3::after,
-    .project4::after {
-        display: none;
-    }
-}
-
-
 /*--------------- footer section --------------- */
 
 .collab {
@@ -371,6 +318,16 @@ h6 {
     color: #fff;
     font-size: 18px;
     padding-left: 20px;
+}
+
+.info a {
+    font-weight: lighter;
+    color: #fff;
+}
+
+.info a:hover {
+    font-weight: lighter;
+    color: #fff;
 }
 
 #is::before {
@@ -473,7 +430,70 @@ h6 {
 }
 
 .image {
-    background: url(https://i.imgur.com/jtefDAq.jpg) no-repeat 50% 20%;
+    background: url(https://i.imgur.com/jtefDAq.jpg) no-repeat 50% 50%;
+}
+
+
+/*--------------- about section --------------- */
+
+h6 {
+    text-align: center;
+}
+
+.project {
+    height: 400px;
+}
+
+.about1 {
+    background: url(https://lh3.googleusercontent.com/bOXgnL7mJ-SCt2-E3Q11aZ6GOmSdGThRl6qBnY0r-MQBb4QdMXdCB9p6RJhbfYX1gBYUwKKcL5Os9qFyq_72ejEOslXbGHGg09OLhuuJ046UD7ZaAz9vfqNJej6pX8kwVERJbqkFZffohEGkMzJT-5J_8PgR97MzzzUVecOqXm43tNBBK6L-KBWp6MAFDbQuFKO3ufuvuYkcZktugWivPDpglCaVHn-3MkF2j_ozv8RT7ChZg40-6w-IvExUUcw_R-A_VeDyeRrtcVOXZK_sZBht1RSuqWOiY5FgB2WBsasNxLUR0NCR__qwhpMWVPfUvJQV1wr1Ozaqc-oIp724kd9TgC_tyHlNJxROXyOyskDsiLzlesX47M-8jWMKo9dyoXcWjZPaJnNCEoF2Uho2w0MgsLyviyDPjzTgHJA5iTFdzVres2-lEiLg4Ra9MQFlI1n2XovqhZbfwX0wY7A6GHrZa0G72NIuSP49gooqs7yugS8PdsruiX-h_lKYhjMoWCdEmIENQ3t9N4E9sagkJZkmaSd0z3LLAK7W77hvAc7ZyGMgq4btVeJslM7cS2ndTBugZ_G1DUakVu1qQEgaPukJX9Oc_BKT-zgza-3iJDcw9P62JcZqq75vidiUQ6S3i5yUV2ZewGTdWuyFT5Bg5iDiFV2LrY5f=w253-h313-no) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.about1::after {
+    content: "imagine você.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 8%;
+    left: -60%;
+    right: 0;
+    bottom: 0;
+}
+
+.about2 {
+    background: url(https://lh3.googleusercontent.com/W7zNGsXPbs7F2aYhAHHN19wonh_s_hENnkqdvOB_c4vYOSSXGh_9klE5TAk8siQKbEyX3ujM99V69Io6CqmCagbF4ERqEg_QyqHYEUJGWzeqO6-mCBF9nGNGkmP6-fp6eGoHbzQru8Nx0jbydgFoNHiOf5maBpvHB5Mv8qgHe1MypjJI4Ktzhx6yloAtXXh9YyzC3CCXrJi1_EP0rl1JCOOlv7AlH38yHAqPWlhy8vo4dtPlmx_fyXnZPiLV0rObXRbxLEbApSYi_Nzbd35bcmF0J3YmO19LVqqg0Edz86DjzuKjtgHWLfQ0BtIhd5EGPF13vmrDdPEFjK_UqGju_CS1uWnAyMubCccMicaeokAJSDuNigbFgeQ4OipWgvHqy9bv44q8I_dFxDqDu2G7hvzatc-ZXPiLwsK6RwxyWPnCpuBsjmhJ8b7yWtwyAC-D2LHV4Ably0BAxZDueW4SY9cYpqx1JhCGUfa5M6Umg0Yh8kX_6V8lV6Nm_P5C4ytOFOhnRjxGxRlS1ZciypQF7XAfBg2GEesg406ZGvzoX323D25grV_M4eEeUPUIXyCKctAcid4hQ0nXDqkvkdHSOgrV35TVdVmbtKnOfCNOCD3RFVLPzgUW4rXwDOPHZvcur3XO3UYhe2aON1Ae9vgEPnxaDZeNKXcw=w538-h323-no) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.about2::after {
+    content: "Seu sonho.";
+    font-family: "Roboto Mono";
+    font-size: 36px;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 20%;
+    left: 110%;
+    right: 0;
+    bottom: 0;
+}
+
+@media(max-width: 768px) {
+    .project {
+        width: 90% !important;
+        margin: 14px auto;
+    }
+    .vertical {
+        display: none;
+    }
+    .about1::after,
+    .about2::after,
+    .about3::after,
+    .about4::after {
+        display: none;
+    }
 }
 
 
@@ -549,20 +569,7 @@ textarea:focus {
         margin: 5% -8%;
         width: 98%;
     }
-}
-
-
-/*--------------- project page --------------- */
-
-.prev,
-.next p {
-    color: grey;
-}
-
-.prev p {
-    text-align: left;
-}
-
-.next p {
-    text-align: right;
+    .about1 {
+        display: none;
+    }
 }

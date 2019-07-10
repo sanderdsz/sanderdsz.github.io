@@ -103,21 +103,42 @@
     -->
 
         <!--------------- hero image starts here --------------->
+        <!--
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 about image wow fadeInUp" data-wow-delay="1.6s"></div>
             </div>
         </div>
+        -->
         <!--------------- hero image ends here --------------->
-        <br>
-        <!--------------- hero section starts here --------------->
+
+        <!-- TEST -->
         <div class="container">
-            <div class="hero-content">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h3 class="wow fadeInUp" data-wow-delay="1.2s">Sobre o autor</h3><br><br>
-                        <p class="wow fadeInUp" data-wow-delay="0.3s">Me chamo Sander dos Santos Zuchinalli, nascido em Urussanga, 1992, formado em Engenharia Mecânica e se especializando em Engenharia de Software.</p>
-                        <p class="wow fadeInUp" data-wow-delay="0.7s">Apaixonado por códigos, em constante aprendizado me faz explorar novas ideias para aplica-lás em meus projetos pessoais.</p>
+            <br><br><br><br>
+
+            <div class="row">
+                <div class="col-lg-8"></div>
+
+                <div class="col-lg-3 project about1 wow fadeInUp" data-wow-delay="0.5s" onclick="location.href='project.html'"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 project about2 wow fadeInUp" data-wow-delay="1.5s" onclick=" location.href='project.html' "></div>
+
+                <div class="col-lg-2 "></div>
+            </div>
+
+        </div>
+        <div class="scroll-down "></div>
+        <br><br><br>
+        <!--------------- hero section starts here --------------->
+        <div class="container ">
+            <div class="hero-content ">
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <h3 class="wow fadeInUp " data-wow-delay="1.2s ">Sobre o autor</h3><br><br>
+                        <p class="wow fadeInUp " data-wow-delay="0.3s ">Me chamo Sander dos Santos Zuchinalli, nascido em Urussanga, 1992, formado em Engenharia Mecânica e se especializando em Engenharia de Software.</p>
+                        <p class="wow fadeInUp " data-wow-delay="0.7s ">Apaixonado por códigos, em constante aprendizado me faz explorar novas ideias para aplica-lás em meus projetos pessoais.</p>
 
                     </div>
                 </div>
@@ -125,7 +146,6 @@
         </div>
         <!--------------- hero section ends here --------------->
 
-        <div class="whitespace"></div>
         <!--------------- footer começa --------------->
         <div class="footer">
             <div class="container">
@@ -151,7 +171,11 @@
                     <div class="row">
                         <div class="col-lg-4" id="personal">
                             <p class="wow fadeInUp">conecte comigo</p>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.2s">gh @sanderdsz</h4>
+                            <a href="https://www.linkedin.com/in/sandersz/">
+                                <h4 class="wow fadeInUp" data-wow-delay="0.2s">
+                                    Linkedin @sandersz
+                                </h4>
+                            </a>
                             <br><br>
                         </div>
 
@@ -159,10 +183,10 @@
                             <p class="wow fadeInUp" data-wow-delay="0s">me siga</p>
 
                             <ul>
-                                <li id="is" class="wow fadeInUp" data-wow-delay="0.4s">is</li>
-                                <li id="gh" class="wow fadeInUp" data-wow-delay="0.6s">gh</li>
-                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">tw</li>
-                                <li id="lk" class="wow fadeInUp" data-wow-delay="1s">kg</li>
+                                <li id="is" class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://www.instagram.com/sanderzuchinalli/">is</a></li>
+                                <li id="gh" class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://github.com/sanderdsz">gh</a></li>
+                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://twitter.com/sanderdsz">tw</a></li>
+                                <li id="lk" class="wow fadeInUp" data-wow-delay="1s"><a href="https://www.kaggle.com/sanderdsz">kg</a></li>
                             </ul>
 
                             <br><br>
@@ -185,49 +209,49 @@
 
     <!--Script de boot-->
     <script>
-        $("#demo_2").t({
+        $("#demo_2 ").t({
             mistype: 10,
             pause_on_click: true,
             typing: function(elm, chr) {
-                if (chr.match(/skyblue/)) elm.find(".t-caret").hide();
-                else if (chr.match(/__caret/)) elm.find(".t-caret").show();
+                if (chr.match(/skyblue/)) elm.find(".t-caret ").hide();
+                else if (chr.match(/__caret/)) elm.find(".t-caret ").show();
             }
         });
     </script>
 
     <!-- greensock cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js "></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
+    <script src="https://code.jquery.com/jquery-3.4.1.js "></script>
+    <script type="text/javascript ">
         // navigation starts here
-        $("#toggle").click(function() {
+        $("#toggle ").click(function() {
             $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+            $("#resize ").toggleClass("active ");
         });
 
-        $("#resize ul li a").click(function() {
+        $("#resize ul li a ").click(function() {
             $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+            $("#resize ").toggleClass("active ");
         });
 
-        $(".close-btn").click(function() {
+        $(".close-btn ").click(function() {
             $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+            $("#resize ").toggleClass("active ");
         });
 
         // navigation ends here
 
         // nav animation
 
-        TweenMax.from("#brand", 1, {
+        TweenMax.from("#brand ", 1, {
             delay: 0.4,
             y: 10,
             opacity: 0,
             ease: Expo.easeInOut
         })
 
-        TweenMax.staggerFrom("#menu li a", 1, {
+        TweenMax.staggerFrom("#menu li a ", 1, {
             delay: 0.4,
             opacity: 0,
             ease: Expo.easeInOut
