@@ -49,7 +49,7 @@ header {
     }
 }
 
-.social-header, .hero-design {
+.social-header, .hero-design, .footer-design {
     display: none;
 }
 
@@ -184,7 +184,62 @@ section {
     margin-bottom: 2em;
 }
 
+/* Footer */
+footer {
+    padding-top: 8em;
+}
+
+.main-footer__texts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 8em;
+}
+
+.main-footer__first-text {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.main-footer__second-text a {
+    color: #6e00ff;
+    font-size: 1.85em;
+    font-weight: bold;
+}
+
+.main-footer__social {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background:  #6e00ff;
+}
+
+.main-footer__social-logo {
+    color: #00f7ff;
+    font-weight: bold;
+}
+
+.main-footer__social-icons {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        a {
+            display: block;
+            padding: 0 1em;
+            img { 
+                width: 20px;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 800px) {
+
+    footer {
+        margin-top: 6em;
+    }
+    
     .featured, .portfolio {
         text-align: left;
     }
@@ -294,6 +349,24 @@ section {
         }
     }
 
+    .main-footer__social-logo {
+        margin-top: 2.5em;
+    }
+
+    .main-footer__social-icons {
+        margin-top: 2.5em;
+    }
+
+    .footer-design {
+        display: unset;
+        width: 30%;
+        margin-top: -28%;
+        margin-left: -90%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
     .meet {
         margin: unset;
     }
@@ -357,6 +430,25 @@ section {
         left: 20px;
         bottom: 200px;
     }
+
+    .main-footer__social-logo {
+        margin-top: 1.5em;
+    }
+
+    .main-footer__social-icons {
+        margin-top: 1.5em;
+    }
+
+    .footer-design {
+        display: unset;
+        width: 25%;
+        margin-top: -21%;
+        margin-left: -90%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1550px) {

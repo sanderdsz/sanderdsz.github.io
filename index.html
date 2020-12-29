@@ -68,7 +68,7 @@
               <rect class="square-anim" data-name="Rectangle 7" width="172" height="172" rx="19" transform="translate(935 633)" fill="#fff" opacity="0.17"/>
               <rect class="square-anim" data-name="Rectangle 4" width="172" height="172" rx="19" transform="translate(1107 805)" fill="#fff"/>
             </g>
-          </svg>
+        </svg>
     </div>
         
     <section class="featured">
@@ -232,6 +232,48 @@
     </section>
     -->
 
+    <footer>
+        <div class="main-footer__texts transition4">
+            <div class="main-footer__first-text">
+                <h1>Like what you see?</h1>
+            </div>
+            <div class="main-footer__second-text">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sandersz/">
+                    Get in touch!
+                </a>
+            </div>
+        </div>
+        <div class="main-footer__social transition4">
+            <div class="main-footer__social-logo">
+                Sander Zuchinalli
+            </div>
+            <div class="main-footer__social-icons">
+                <ul>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sanderzuchinalli/" class="">
+                        <img src="images/jam_instagram.svg" alt="Instagram">
+                    </a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.github.com/sanderdsz" class="">
+                        <img src="images/brandico_github.svg" alt="Github">
+                    </a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sandersz/" class="">
+                        <img src="images/jam_linkedin-circle.svg" alt="Twitter">
+                    </a></li>
+                </ul>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-design" width="686" height="386" viewBox="0 0 686 288">
+                <g id="blockdesign" transform="translate(-935 -289)">
+                  <rect class="square-anim-2" data-name="Rectangle 2" width="172" height="172" rx="19" transform="translate(1277 289)" fill="#6e00ff"/>
+                  <rect class="square-anim-2" data-name="Rectangle 10" width="172" height="172" rx="86" transform="translate(1277 461)" fill="#ff64cb"/>
+                  <rect class="square-anim-2" data-name="Rectangle 8" width="172" height="172" rx="19" transform="translate(1449 461)" fill="#e5d5fa"/>
+                  <rect class="square-anim-2" data-name="Rectangle 5" width="172" height="172" rx="19" transform="translate(1277 633)" fill="#6e00ff"/>
+                  <rect class="square-anim-2" data-name="Rectangle 3" width="172" height="172" rx="19" transform="translate(1107 461)" fill="#fff"/>
+                  <rect class="square-anim-2" data-name="Rectangle 9" width="172" height="172" rx="86" transform="translate(1107 633)" fill="#00f7ff"/>
+                  <rect class="square-anim-2" data-name="Rectangle 7" width="172" height="172" rx="19" transform="translate(935 633)" fill="#fff" opacity="0.17"/>
+                </g>
+            </svg>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
@@ -289,6 +331,29 @@
         duration: 1.2,
         stagger: .6,
         })
+
+        gsap.from('.transition4', {
+            scrollTrigger: {
+                trigger: '.transition4',
+                start: 'top bottom'
+            },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .6,
+        })
+
+        gsap.from(".square-anim-2", {
+            scrollTrigger: {
+                trigger: '.square-anim-2',
+                start: 'top bottom'
+            },
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
         
     </script>
 
