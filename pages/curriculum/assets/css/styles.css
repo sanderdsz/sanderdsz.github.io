@@ -85,8 +85,9 @@ body.scale-cv{
   max-width: 595px;
 }
 
+/* This dictates the height when PDF is generated */
 .scale-cv .section {
-  padding: .88rem 0 .80rem;
+  padding: .90rem 0 .50rem;
 }
 
 .scale-cv .section-title {
