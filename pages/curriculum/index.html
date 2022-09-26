@@ -1,416 +1,508 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <title>Sander Zuchinalli</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Sander</a>
+    <title>Sander Zuchinalli</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Sander</a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bx-home nav__icon' ></i>Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#profile" class="nav__link">
-                                <i class='bx bx-user nav__icon' ></i>Profile
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class='bx bx-book nav__icon' ></i>Education
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bx-receipt nav__icon' ></i>Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#experience" class="nav__link">
-                                <i class='bx bx-briefcase-alt nav__icon' ></i>Experience
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#certificates" class="nav__link">
-                                <i class='bx bx-award nav__icon' ></i>Certificates
-                            </a>
-                        </li>
-                    </ul>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Education
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificates
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="assets/img/perfil.jpg" alt="" class="home__img" />
+                <h1 class="home__title">ZUCHINALLI <b>SANDER</b></h1>
+                <h3 class="home__profession">web developer</h3>
+
+                <div>
+                  <a
+                    download=""
+                    href="assets/pdf/resume.pdf"
+                    class="home__button-movil"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+
+              <div class="home_address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i> Criciúma, Brazil
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i> sanderdsz@gmail.com
+                </span>
+              </div>
+            </div>
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://github.com/sanderdsz"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-github social__icon"></i> @sanderdsz
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sandersz/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i> @sandersz
+              </a>
+              <a
+                href="https://www.instagram.com/sanderzuchinalli/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-instagram social__icon"></i> @sanderzuchinalli
+              </a>
+            </div>
+          </section>
+
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+
+            <p class="profile__description">
+              With a passion for coding, main working with Java development but
+              also very capable with frontend technologies.
+            </p>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    SPECIALIST OF SOFTWARE ENGINEERING
+                  </h3>
+                  <span class="education__studies"
+                    >ESUCRI - Escola Superior de Criciúma</span
+                  >
+                  <span class="education__year">2019-2021</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    BARCHELOR OF COMPUTER SYSTEMS ANALYSIS
+                  </h3>
+                  <span class="education__studies"
+                    >ESUCRI - Escola Superior de Criciúma</span
+                  >
+                  <span class="education__year">2019-2022</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!--<span class="education__line"></span>-->
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    BARCHELOR OF MECHANICAL ENGINEERING
+                  </h3>
+                  <span class="education__studies"
+                    >UNESC - Universidade do Extremo Sul Catarinense</span
+                  >
+                  <span class="education__year">2013-2018</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>HTML
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>CSS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>SASS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Javascript
+                </li>
+              </ul>
+
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Java
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Vue.JS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>React
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Angular
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="bx bx-grid-alt"></i>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Senior Software Engineer</h3>
+                  <span class="experience__company"
+                    >From 2022 to now | NTT Data</span
+                  >
+                  <p class="experience__description">
+                    Working at Itaú Unibanco, one of the largests Brazil
+                    financial institutes, acting as frontend engineer focused on
+                    developing and modernize new microfrontend solutions on
+                    Angular 10 plus with backend for frontend written in C#.
+                  </p>
                 </div>
-            </nav>
-        </header>
+              </div>
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        <div class="home__container section bd-grid">
-                            <div class="home__data bd-grid">
-                                <img src="assets/img/perfil.jpg" alt="" class="home__img">
-                                <h1 class="home__title">ZUCHINALLI <b>SANDER</b></h1>
-                                <h3 class="home__profession">web developer</h3>
-                            
-                                <div>
-                                    <a download="" href="assets/pdf/resume.pdf" class="home__button-movil">
-                                        Download
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="home_address bd-grid">
-                                <span class="home__information">
-                                    <i class="bx bx-map home__icon"></i> Criciúma, Brazil
-                                </span>
-                                <span class="home__information">
-                                    <i class="bx bx-envelope home__icon"></i> sanderdsz@gmail.com
-                                </span>
-                            </div>
-
-                        </div>
-                        <!-- Theme change button -->
-                        <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
-
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
-                        <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        <h2 class="section-title">SOCIAL</h2>
-
-                        <div class="social__container bd-grid">
-                            <a href="https://github.com/sanderdsz" target="_blank" class="social__link">
-                                <i class='bx bxl-github social__icon'></i> @sanderdsz
-                            </a>
-                            <a href="https://www.linkedin.com/in/sandersz/" target="_blank" class="social__link">
-                                <i class='bx bxl-linkedin-square social__icon'></i> @sandersz
-                            </a>
-                            <a href="https://www.instagram.com/sanderzuchinalli/" target="_blank" class="social__link">
-                                <i class='bx bxl-instagram social__icon'></i> @sanderzuchinalli
-                            </a>
-                        </div>
-                    </section>
-
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Profile</h2>
-
-                        <p class="profile__description">
-                            With a passion for coding, main working with Java development
-                            but also very capable with frontend technologies.
-                        </p>
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        <h2 class="section-title">Education</h2>
-
-                        <div class="education__container bd-grid">
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">SPECIALIST OF SOFTWARE ENGINEERING</h3>
-                                    <span class="education__studies">ESUCRI - Escola Superior de Criciúma</span>
-                                    <span class="education__year">2019-2021</span>
-                                </div>
-                            </div>
-
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">BARCHELOR OF COMPUTER SYSTEMS ANALYSIS</h3>
-                                    <span class="education__studies">ESUCRI - Escola Superior de Criciúma</span>
-                                    <span class="education__year">2019-2022</span>
-                                </div>
-                            </div>
-
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <!--<span class="education__line"></span>-->
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">BARCHELOR OF MECHANICAL ENGINEERING</h3>
-                                    <span class="education__studies">UNESC - Universidade do Extremo Sul Catarinense</span>
-                                    <span class="education__year">2013-2018</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Skills</h2>
-
-                        <div class="skills__content bd-grid">
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>HTML
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>CSS
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>SASS
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Javascript
-                                </li>
-                            </ul>
-
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Java
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Vue.JS
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Spring Boot
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>AngularJS - 8
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
                 </div>
 
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experience</h2>
-
-                        <div class="experience__container bd-grid">
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Senior Software Engineer</h3>
-                                    <span class="experience__company">From 2021 to now | Betha Sistemas</span>
-                                    <p class="experience__description">
-                                        Acting as software engineer on a platform for website creation, which provides customizable templates, a builder that includes apps, 
-                                        image galleries, news and other options, all this made from a frontend app writen in Vue.JS as client.
-                                    </p>
-                                    <p class="experience__description">
-                                        A microservice backend serving as CMS-like, based in Java Spring Boot powered with JPA, 
-                                        Hibernate and Querydsl with Angular.JS as dashboard and PostgreSQL as database.
-                                    </p>
-                                    <p class="experience__description">
-                                        Also as a developer on a mobile app, which unite most city services for the citizens easy access, 
-                                        made with Angular 5, Ionic and Cordova as frameworks for cross platform development.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Jr. Software Engineer</h3>
-                                    <span class="experience__company">From 2019 to 2021 | Betha Sistemas</span>
-                                    <p class="experience__description">
-                                        Worked at the inspection management system, with microservices based in Java, using Spring Boot with ActiveMQ for services communication, 
-                                        JPA with Hibernate and Querydsl and unit testing with JUnit, also databases with PostgreSQL and MongoDB. 
-                                    </p>
-                                    <p class="experience__description">
-                                        Frontend development component based with Angular.JS and Javascript ECMA 6. Also working with Jasper Reports and some Groovy lang based scripts for automated reports.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Project Analyst</h3>
-                                    <span class="experience__company">From 2018 to 2019 | Plasson</span>
-                                    <p class="experience__description">
-                                        Previously working with programming mathematics, 
-                                        using MATLAB and some Python scripts for automation.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <!-- <span class="experience__line"></span>-->
-                                </div>
-
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Development Assistant</h3>
-                                    <span class="experience__company">From 2015 to 2018 | Alumasa</span>
-                                    <p class="experience__description">
-                                        Developing market researches and costs management for product improvements, marketing planning and also web advertising campaings.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        <div class="certificate__container bd-grid">
-                            <h2 class="section-title">Certificates</h2>
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">
-                                    CSS the Complete Guide
-                                </h3>
-                                <p class="certification__description">Academind on Jan 2021</p>
-                            </div>
-
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">
-                                    Java Explorer
-                                </h3>
-                                <p class="certification__description">Oracle on Nov 2020</p>
-                            </div>
-
-                            <!--
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">
-                                    SQL Manipulation
-                                </h3>
-                                <p class="certification__description">CodeAcademy on Jul 2019</p>
-                            </div>
-                            -->
-
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">
-                                    Web Development: HTML, CSS, Javascript and Bootstrap
-                                </h3>
-                                <p class="certification__description">Udemy on Jul 2019</p>
-                            </div>
-
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">
-                                    Java Object Oriented Programming
-                                </h3>
-                                <p class="certification__description">Udemy on Jun 2019</p>
-                            </div>
-                            
-                            <!--
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">
-                                    Algorithms and Data Structure
-                                </h3>
-                                <p class="certification__description">Udemy on May 2019</p>
-                            </div>
-
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">
-                                    Automatize with Python
-                                </h3>
-                                <p class="certification__description">Udemy on May 2019</p>
-                            </div>
-                            -->
-                        </div>
-                    </section>
-
-                    <!--
-                    ========== REFERENCES ==========
-                    <section class="references section" id="references">
-                        
-                    </section>
-                    -->
-
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        <h2 class="section-title">Languages</h2>
-
-                        <div class="languages__container">
-                            <ul class="languages__content bd-grid">
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span>Advanced English
-                                </li>
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span>Portuguese
-                                </li>
-                            </ul>
-                        </div>
-
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <!--
-                    <section class="interests section">
-                        <h2 class="section-title">Interests</h2>
-
-                        <div class="interests__container bd-grid">
-                            <div class="interests__content">
-                                <i class='bx bxs-terminal interests__icon' ></i>
-                                <span class="interests__name">Coding</span>
-                            </div>
-
-                            <div class="interests__content">
-                                <i class='bx bx-cycling interests__icon'></i>
-                                <span class="interests__name">Cycling</span>
-                            </div>
-
-                            <div class="interests__content">
-                                <i class='bx bxs-book-reader interests__icon' ></i>
-                                <span class="interests__name">Reading</span>
-                            </div>
-
-                            <div class="interests__content">
-                                <i class='bx bx-run interests__icon' ></i>
-                                <span class="interests__name">Running</span>
-                            </div>
-                        </div>
-                    </section>
-                    -->
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Senior Software Engineer</h3>
+                  <span class="experience__company"
+                    >From 2021 to now | Betha Sistemas</span
+                  >
+                  <p class="experience__description">
+                    Acting as software engineer on a platform for website
+                    creation, which provides customizable templates, a builder
+                    that includes apps, image galleries, news and other options,
+                    all this made from a frontend app writen in Vue.JS as
+                    client.
+                  </p>
+                  <p class="experience__description">
+                    A microservice backend serving as CMS-like, based in Java
+                    Spring Boot powered with JPA, Hibernate and Querydsl with
+                    Angular.JS as dashboard and PostgreSQL as database.
+                  </p>
+                  <p class="experience__description">
+                    Also as a developer on a mobile app, which unite most city
+                    services for the citizens easy access, made with Angular 5,
+                    Ionic and Cordova as frameworks for cross platform
+                    development.
+                  </p>
                 </div>
-            </div>        
-        </main>
+              </div>
 
-        <!--========== SCROLL TOP ==========-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-up-arrow-alt scrolltop__icon' ></i>
-        </a>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
 
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Jr. Software Engineer</h3>
+                  <span class="experience__company"
+                    >From 2019 to 2021 | Betha Sistemas</span
+                  >
+                  <p class="experience__description">
+                    Worked at the inspection management system, with
+                    microservices based in Java, using Spring Boot with ActiveMQ
+                    for services communication, JPA with Hibernate and Querydsl
+                    and unit testing with JUnit, also databases with PostgreSQL
+                    and MongoDB.
+                  </p>
+                  <p class="experience__description">
+                    Frontend development component based with Angular.JS and
+                    Javascript ECMA 6. Also working with Jasper Reports and some
+                    Groovy lang based scripts for automated reports.
+                  </p>
+                </div>
+              </div>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!--<span class="experience__line"></span>-->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Project Analyst</h3>
+                  <span class="experience__company"
+                    >From 2018 to 2019 | Plasson</span
+                  >
+                  <p class="experience__description">
+                    Previously working with programming mathematics, using
+                    MATLAB and some Python scripts for automation.
+                  </p>
+                </div>
+              </div>
+
+              <!--
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Development Assistant</h3>
+                  <span class="experience__company"
+                    >From 2015 to 2018 | Alumasa</span
+                  >
+                  <p class="experience__description">
+                    Developing market researches and costs management for
+                    product improvements, marketing planning and also web
+                    advertising campaings.
+                  </p>
+                </div>
+              </div>
+							-->
+            </div>
+          </section>
+
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificates">
+            <div class="certificate__container bd-grid">
+              <h2 class="section-title">Certificates</h2>
+              <div class="certificate__content">
+                <h3 class="certificate__title">React Native Ignite</h3>
+                <p class="certification__description">Rocketseat on Sep 2022</p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">NodeJS Ignite</h3>
+                <p class="certification__description">Rocketseat on Jul 2022</p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">ReactJS Ignite</h3>
+                <p class="certification__description">Rocketseat on May 2022</p>
+              </div>
+
+              <!--
+              <div class="certificate__content">
+                <h3 class="certificate__title">CSS the Complete Guide</h3>
+                <p class="certification__description">Academind on Jan 2021</p>
+              </div>
+							-->
+
+              <!--
+              <div class="certificate__content">
+                <h3 class="certificate__title">Java Explorer</h3>
+                <p class="certification__description">Oracle on Nov 2020</p>
+              </div>
+							-->
+
+              <!--
+                <div class="certificate__content">
+                    <h3 class="certificate__title">
+                        SQL Manipulation
+                    </h3>
+                    <p class="certification__description">CodeAcademy on Jul 2019</p>
+                </div>
+            	-->
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Web Development: HTML, CSS, Javascript and Bootstrap
+                </h3>
+                <p class="certification__description">Udemy on Jul 2019</p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Java Object Oriented Programming
+                </h3>
+                <p class="certification__description">Udemy on Jun 2019</p>
+              </div>
+
+              <!--
+                <div class="certificate__content">
+                    <h3 class="certificate__title">
+                        Algorithms and Data Structure
+                    </h3>
+                    <p class="certification__description">Udemy on May 2019</p>
+                </div>
+
+                <div class="certificate__content">
+                    <h3 class="certificate__title">
+                        Automatize with Python
+                    </h3>
+                    <p class="certification__description">Udemy on May 2019</p>
+                </div>
+            --></div>
+          </section>
+
+          <!--
+            ========== REFERENCES ==========
+            <section class="references section" id="references">
+                
+            </section>
+        -->
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span>Advanced English
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span>Portuguese
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <!--
+            <section class="interests section">
+                <h2 class="section-title">Interests</h2>
+
+                <div class="interests__container bd-grid">
+                    <div class="interests__content">
+                        <i class='bx bxs-terminal interests__icon' ></i>
+                        <span class="interests__name">Coding</span>
+                    </div>
+
+                    <div class="interests__content">
+                        <i class='bx bx-cycling interests__icon'></i>
+                        <span class="interests__name">Cycling</span>
+                    </div>
+
+                    <div class="interests__content">
+                        <i class='bx bxs-book-reader interests__icon' ></i>
+                        <span class="interests__name">Reading</span>
+                    </div>
+
+                    <div class="interests__content">
+                        <i class='bx bx-run interests__icon' ></i>
+                        <span class="interests__name">Running</span>
+                    </div>
+                </div>
+            </section>
+            -->
+        </div>
+      </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
